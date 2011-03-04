@@ -34,7 +34,7 @@ should see something like this:
 
 Similarly, for `ian@godel.asc`, you can verify it against the `godel` tag.
 
-    git tag -v gmail
+    git tag -v godel
 
 
 It occurred to me after starting this repo that these public keys have my
