@@ -14,9 +14,9 @@ other keys with it.
 ## Verifying
 
 Verifying `ian.eccles@gmail.com.asc` should require nothing more than a GPG
-suite and this repo.  Import the key, then verify tag 1.0 of this repository:
+suite and this repo.  Import the key, then verify tag `gmail` of this repository:
 
-    git tag -v 1.0
+    git tag -v gmail
     
 You may need to fetch the tag from github first, but if all goes well you
 should see something like this:
@@ -31,3 +31,12 @@ should see something like this:
     gpg: Good signature from "Ian D. Eccles <ian.eccles@gmail.com>"
     gpg:                 aka "Ian Eccles <ian.eccles@gmail.com>"
 
+
+Similarly, for `ian@godel.asc`, you can verify it against the `godel` tag.
+
+    git tag -v gmail
+
+
+It occurred to me after starting this repo that these public keys have my
+screaming head avatar embedded in them.  So, that should explain why each
+key is roughly 9Kb larger than it need be.
