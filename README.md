@@ -40,3 +40,24 @@ Similarly, for `ian@godel.asc`, you can verify it against the `godel` tag.
 It occurred to me after starting this repo that these public keys have my
 screaming head avatar embedded in them.  So, that should explain why each
 key is roughly 9Kb larger than it need be.
+
+## Dead Keys
+
+Depending your GPG client and the key server you use, you may come
+across two other 1024 bit DSA keys for `ian.eccles@gmail.com`:
+
+    pub   1024D/75760FB0 2006-08-10 [expired: 2007-08-10]
+    uid                  Ian Eccles <ian.eccles@gmail.com>
+
+    pub   1024D/5AD26872 2005-10-13
+    uid                  Ian Eccles <ian@mathish.com>
+    uid                  Ian Eccles <ian.eccles@gmail.com>
+    sub   2048g/3DD15C64 2005-10-13
+    
+Fortunately, I did set an expiration date on 75760FB0, so it's obviously
+no good. However, 5AD26872 is forever lost. I've tagged the addition
+of these dead keys as `dead_keys` and signed it with my current gmail
+key.
+
+    git tag -v dead_keys
+    
