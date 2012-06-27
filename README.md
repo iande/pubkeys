@@ -1,3 +1,6 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
 # My GPG Public Keys
 
 ## Update - 2012-06-27
@@ -14,7 +17,7 @@ Updating them from your preferred GPG/PGP key server should result in them
 being revoked, but I really haven't tested that. I have only verified that
 key servers are reporting those public keys as revoked.
 
-## ian.eccles@gmail.com.asc
+## Pubkey: ian.eccles@gmail.com.asc
 
 This is my primary key-pair and includes a few additional UIDs for other
 email addresses I have been known to use.
@@ -78,9 +81,27 @@ across two other 1024 bit DSA keys for `ian.eccles@gmail.com`:
     sub   2048g/3DD15C64 2005-10-13
     
 Fortunately, I did set an expiration date on 75760FB0, so it's obviously
-no good. However, 5AD26872 is forever lost. I've tagged the addition
-of these dead keys as `dead_keys` and signed it with my current gmail
-key.
+no good. However, 5AD26872 is forever lost.
 
-    git tag -v dead_keys
-    
+
+## Signature
+
+And just for kicks, I clearsign'd this file.
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG/MacGPG2 v2.0.17 (Darwin)
+Comment: GPGTools - http://gpgtools.org
+
+iQIcBAEBAgAGBQJP6y0yAAoJEOkRk6E1XrEX+kwQAKeSIS+5pg1X5ZpTSRlUDSZR
+x8lCb/rTAVLJKhjKIFmna6htevZacO94+K9JOy0oTOQefWVhRafGJQ+egfQ5ujlc
+eDdR6B8noONL82yXElBFLZomUNhXKmSYzWBwT4XQzHSi5cWSO/ggzxGpdfSj/SOO
+m6a/v1fvX81ydML2lXBN5++Ew0q2TDdFei3qUxLYRD22jMJ+9r33wUaHCq4Z5vPv
+SU7dc9O7IPpV7NN7zpAaPHaYUfg6YoNHo4q7B4wHtgj5XjLhcNP1A1iTE3vVVDsv
+/vLt5+8Onc3N8BUBoxwJiqJJMkotXzI41oEqbORXQl5ySs3SOX/kvGWLqCiSxmg2
+PZq43xk+f+idzgEHllRj0tctykkN699MZBZpUy61gXBtT9jBjsCbFUB6oIboib8b
+r1T0329qbDibjXqZAG7XqJE4hHrHMU+3bmUooeyRoqBVLZphlecv1ZPHWERjJ5Zb
+4EEo/jYxG74PWQJoVzKgoStrjAxRz7x5PpZgY/K2xlMb0F16ZXnBz6DEGr7u9q2p
+6/47MZ9s/0JkT/g2/dg8pfI8PRRu1AcUg0u4V7hxdqbZPoTMoaIEtOOf5DFfvqKf
+ZpA5MqmdfxFhsowYsEACDS5jKCSqyWOyH4JYGrKHafM1RwJOVSwYByB85gdtAp0A
+d/WNp/KqHVLmOuEBE5FQ
+=jhUa
+-----END PGP SIGNATURE-----
