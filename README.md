@@ -1,7 +1,12 @@
 -----BEGIN PGP SIGNED MESSAGE-----
-Hash: SHA256
+Hash: SHA512
 
 # My GPG Public Keys
+
+## Update - 2016-04-07
+
+Changed the public key name to match the GPG Key ID (D89D82B4.asc) and updated
+the verification instructions.
 
 ## Update - 2012-06-27
 
@@ -27,23 +32,23 @@ email addresses I have been known to use.
 Verifying `ian.eccles@gmail.com.asc` should require nothing more than a GPG
 suite and this repo.  Import the key, then verify tag `v2.0.0` of this repository:
 
-    git tag -v v2.0.0
+    git tag -v v2.1.0
     
 You may need to fetch the tag from github first, but if all goes well you
 should see something like this:
 
-    object 9efefadad5baacb99a530e7350ec446c2d16da46
+    object a93b188bbac2e73e40b34b6ab99d01120fae56ec
     type commit
-    tag v2.0.0.pre
-    tagger Ian D. Eccles <ian.eccles@gmail.com> 1340809612 -0400
+    tag v2.1.0.pre
+    tagger Ian D. Eccles <ian.eccles@apocryphilia.net> 1460045772 -0400
 
-    tagged for example output
-    gpg: Signature made Wed Jun 27 11:06:52 2012 EDT using RSA key ID 355EB117
-    gpg: Good signature from "Ian D. Eccles <ian.eccles@gmail.com>"
+    Updated key and instructions
+    gpg: Signature made Thu Apr  7 12:16:57 2016 EDT using RSA key ID 355EB117
+    gpg: Good signature from "Ian D. Eccles <ian.eccles@apocryphilia.net>"
+    gpg:                 aka "Ian D. Eccles <ian.eccles@gmail.com>"
     gpg:                 aka "Ian D. Eccles <whollychao@gmail.com>"
     gpg:                 aka "Ian D. Eccles <iande@mathish.com>"
     gpg:                 aka "Ian D. Eccles <ian@godel>"
-    gpg:                 aka "Ian D. Eccles <Ian.Eccles@univwell.com>"
 
 Your results will differ as this output is for a test tag I created for
 demonstration purposes.
@@ -88,23 +93,20 @@ no good. However, 5AD26872 is forever lost.
 
 And just for kicks, I clearsign'd this file.
 
-
-
 -----BEGIN PGP SIGNATURE-----
-Version: GnuPG/MacGPG2 v2.0.17 (Darwin)
-Comment: GPGTools - http://gpgtools.org
+Comment: GPGTools - https://gpgtools.org
 
-iQIcBAEBCAAGBQJP6y9rAAoJEOkRk6E1XrEXctYP/RlyszWdLtgd1vPcgLbLqTgw
-X8sGaZ57Q3SD4/uA3LDoaQcP8ZrHDc5Dvl5PvtxH2JCrUvYJ8kIsDQow0kTGa4ZP
-cG4LjtaWbj40Jc6SdiOBiBGIGxFErLxr5a8YgDOY9O/wCJg7D98pKsNVoi6c1Dy3
-K5MizbWm5X/ZgjyxBBj1SMKo1RPP9ex1f4jITeehSupoV0CIPxjEE1+w2V6VPffl
-W8RD89mwcDwmPQqmElXmSAgRi73uo9ExgF1n6JS/IGwLY8kOlqhWlyQvqvwQwvD9
-rV+TMcPIKp2Yclcpllo3Q8GiwzLwZPmMWyd5kCOPjUdNHaPgdPOH3bJLvS6D1IvG
-TlgKj2xG22Vm7P8OFld8jpctUs2y4wg2irikrVnQ3KZAQziLh4Ide7bHriyjXg7L
-ap0rPMln21hNAIzRZ0RZ6pidj9vu4M5rVSBPZ3b18AohuPyqBSbzILHGZZMT7qX/
-aXGqb0DQWz/oiC9YjBgNT68t4VPBssf9YnmYn8pWz1bsJ69ZzvGNRUAco/LVEq0R
-N1yLmptfOgiKwNVTe3pI4uqQiafJgNTqgnrHGSYMCg8dp3A7fWiIajHTE5Q2tIV6
-M17kgOSQcwwxi52Talt0kxU1tO07H2NLgQKXyyXACizjBhFxRF8F5QtwIaR3DrVM
-oPKN1b+Fskk/fkM3pRvU
-=2eVp
+iQIcBAEBCgAGBQJXBojqAAoJEOkRk6E1XrEX3B0P/0MCSw9237fDTxv3AJMvWfbc
+Wi3td2/4NJsfpUkmUzQ0n8V4xJkikeElD40n9G5IOMtkj7ZMhXdsKJOhHRBynSKW
+MYAq9cLCIm4eozKAYWm5RmWVj4T485MdQFhxwlolYNzP+LJBcefOm9g6j9TMu/zs
+w/Ny9l2aRAB4+vt6auywltsqdiNwjb6AQ2peETNVlLNYFiWwOY9z/SeoFMdZlbYV
+TW9v1Af8RoF5/2K+CdkPOQMRrRYGa5qW+wfqEdfqyPZq9S7C+2997HofSvOsqX7o
+PAr8cmQepoXrGOg6bpgPfWJk/iExq3+ntJbqwOeIXvsZeivQn7hcVU/Ug69fW6kD
+pslMuwt4Fic15r5ckolCF/wQmPh1KMsR+rgPDM0vv3zNiYT8BWaymtLYO6jI2eKd
+8PylfRBWoB2KKSlbkgS2UX7c08gKNeztkqNLQ6PT0Kuo4xHNwhqOFFnUMP8jtU4C
+pptjNtcX5ugiLN41cDK067eSuJMjtPNVR/g8WlojoqGEX9XTIeyLAstcfYRaSfyf
+qH8kdMQ8kq76ZcqORDouxfJFCRLpZxWG4vdt18eVxL5RnOvHFF4XGQaq2JDAmMba
+W7HXTCIgxPw91ZaS8h9D2H0cufpVTn56eS4Ez0katx8JHjs2ir9sRAXmWnEDSU5V
+b6chzo7R0XrQRK/B3Cfc
+=sFoV
 -----END PGP SIGNATURE-----
